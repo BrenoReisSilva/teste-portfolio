@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Great+Vibes&display=swap');
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+padding: 80px;
+margin: 0 auto;
+}
+
+.titulo {
+  font-family: "Audiowide", sans-serif;
+  font-size: 3rem;
+}
+
+.destaque {
+  color: #ffd700;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.menu a:hover {
+  border-radius: 30px;
+  color: #141414;
+  padding: 10px 20px;
+  background-color: #d3d3d3;
+  transition: 0.7s;
+}
+
+@media (max-width:1000px) {
+  .header {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px;
+  }
+  .menu a {
+    background-color: #d3d3d3;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #141414;
+  }
+}
+
+@media (max-width:400px) {
+  .titulo {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .menu a {
+    font-size: 1.25rem;
+  }
+}

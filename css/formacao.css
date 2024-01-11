@@ -1,0 +1,56 @@
+.formacao {
+  display: grid;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+  align-items: center;
+}
+
+.subtitulo {
+  font-size: 4rem;
+  color: #ffd700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.lista-formacao {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+}
+
+.lista-formacao li {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.tipo {
+  margin-bottom: 10px;
+  color: #a8a8a8;
+}
+
+.curso {
+  margin-bottom: 30px;
+  flex: 1;
+  position: relative;
+}
+
+.curso::before {
+  display: block;
+  content: "";
+  background-color: #ffd700;
+  height: 20px;
+  width: 4px;
+  position: absolute;
+  left: -24px;
+}
+
+@media (max-width:400px) {
+  .lista-formacao {
+    flex-direction: column;
+  } 
+}
